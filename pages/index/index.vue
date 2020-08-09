@@ -1,12 +1,15 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}} {{userInfo.name}}</text>
+	<view>
+		<view class="content">
+			<image class="logo" src="/static/logo.png"></image>
+			<view class="text-area">
+				<text class="title">{{title}} {{userInfo.name}}</text>
+			</view>
+			<view class="text-area">
+				<text class="title">{{url}}</text>
+			</view>
 		</view>
-		<view class="text-area">
-			<text class="title">{{url}}</text>
-		</view>
+		<u-icon name="photo"></u-icon>
 	</view>
 </template>
 
