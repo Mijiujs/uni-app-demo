@@ -1,4 +1,7 @@
 {
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -6,22 +9,19 @@
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "uni-app"
 			}
+		}, {
+			"path": "pages/user/user",
+			"style": {}
+		}, {
+			"path": "pages/chart/chart",
+			"style": {}
 		}
-	    ,{
-            "path" : "pages/user/user",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/chart/chart",
-            "style" : {}
-        }
-    ],
-	"tabBar":{
+	],
+	"tabBar": {
 		"color": "#7a7e83",
 		"selectedColor": "#0faeff",
 		"backgroundColor": "#ffffff",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/index/index",
 				"text": "首页",
 				"iconPath": "static/home.png",
